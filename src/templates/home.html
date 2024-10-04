@@ -16,14 +16,15 @@
     </div>
 
     <ul>
-      <a href="#"><li>Início</li></a>
-      <a href="#"><li>Serviços</li></a>
-      <a href="#"><li>Sobre</li></a>
+      <a href="/"><li>Início</li></a>
+      <a href="services"><li>Serviços</li></a>
+      <a href="about"><li>Sobre a coleta</li></a>
       <a href="#" id="contato1-btn"><li>Contato</li></a>
     </ul>
 
   </header>
 
+  
   <main>
     <aside>
       <h2><span>Fale conosco</span></h2>
@@ -32,10 +33,13 @@
         Informe seu nome e e-mail agora mesmo!.
 
       </p>
-      <form>  
+      <form action="https://formsubmit.co/matheus.pro3@outlook.com"method="POST">
         <input type="text" placeholder="Nome">
         <input type="email" placeholder="E-Mail">
+        <input type="hidden" name="_captcha" value="false">
+        <textarea name="message" placeholder="Escreva aqui sua mensagem"></textarea>
         <input type="submit" value="Enviar>">
+        
       </form>
     </aside>
 
