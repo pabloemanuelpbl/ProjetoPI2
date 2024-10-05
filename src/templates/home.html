@@ -10,31 +10,31 @@
 </head>
 <body>
   
-  {% include "header_component.html" %}
-  
-  <main>
-    <aside>
-      <h2><span>Fale conosco</span></h2>
+    {% include "header_component.html" %}
+    <section id="apresentation">
 
-      <p>
-        Informe seu nome e e-mail agora mesmo!.
-
-      </p>
-      <form action="https://formsubmit.co/matheus.pro3@outlook.com"method="POST">
-        <input type="text" placeholder="Nome">
-        <input type="email" placeholder="E-Mail">
-        <input type="hidden" name="_captcha" value="false">
-        <textarea name="message" placeholder="Escreva aqui sua mensagem"></textarea>
-        <input type="submit" value="Enviar>">
-        
-      </form>
-    </aside>
-
-    <article>
+        <div class="card-image">
+          <img src="/static/images/recicle.png" alt="imagen relacionada a reciclagem"> </img>
+        </div>
+      
+        <div class="card">
+          <div class="card-title">
+            <h1>Quem Somos</h1>
+          </div>
+      
+          <div class="card-description">
+            <strong>Cole Sel</strong> é um software gratuito focado em reciclagem domiciliar, aprenda com a gente a contribuir para um futuro mais sustentável.
+          </div>
+        </div>
+      
+    </section>
     
 
-    </article>
-  </main>
+    <section id="cadastro">
+        <h2>Cadastre-se e comece</h2>
+        <a href="#cadastro" class="cadastre-se-btn">Cadastre-se</a>
+    </section>
+
 </body>
 
 </html>

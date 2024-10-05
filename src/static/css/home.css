@@ -7,117 +7,45 @@ body {
     padding: 15px;
 }
 
-#title {
-    font-size: 30px;
-}
-
-header {
+/*  apresentacao */
+#apresentation {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
+    width: 100%;
+    background-color: white;
+    color: black;
 }
 
-#title {
-    flex-direction: column;
-    line-height: 10px;
-
-}
-
-
-li {
-    display: inline-block;
-    margin: 20px;
-
-}
-
-a {
-    color: white;
-    font-family: comic sans ms;
-}
-
-a:hover {
-    color: rgb(1, 70, 7);
-    transition: 0.3s all;
-}
-
-#contato1-btn {
-    border: 2px solid rgb(71, 138, 101);
-    padding: 10px;
-    border-radius: 15px;
-}
-
-#contato1-btn:hover {
-    background-color: rgb(71, 138, 101);
-    color: white;
-}
-
-h1 {
-    font-weight: 10px;
-}
-
-
-main {
-    display: flex;
-    flex-direction: row;
-    margin-top: 50px;
-}
-
-
-h2 {
-    font-size: 56px;
-    line-height: 10px;
-    font-family: poppismedium;
-
-}
-
-span {
-    color: rgb(70, 179, 85);
-}
-
-p {
-    font-size: 25px;
-    line-height: 20px;
-    max-width: 500px;
-    font-family: poppislight;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-}
-
-form [type="submit"] {
-    height: 50px;
-    width: 50%;
-    background-color: rgb(118, 157, 240);
-    color: white;
-    font-weight: bold;
-
-}
-
-form [type="submit"]:hover {
-    cursor: pointer;
-}
-
-
-input {
-    margin-top: 20px;
-    height: 20px;
-    padding: 15px;
-    border-radius: 20px;
-    border: nome;
-    font-size: 15px;
-}
-
-textarea {
-    margin-top: 20px;
-    height: 20px;
-    padding: 30px;
-    border-radius: 20px;
-    border: nome;
-    font-size: 15px;
+.card-image {
+    width: 300px;
     
+}
+
+.card-image > img {
+    width: 100%;
+    height: 100%;
+}
+
+.card .card-title {
+    font-size: 2rem;
+    color: #4D4D4D;
+    
+}
+
+/* cadastro */
+
+.cadastre-se-btn {
+    background-color: #000; /* Preto */
+    color: white; /* Texto branco */
+    padding: 15px 30px; /* Espaçamento */
+    text-align: center; /* Centraliza o texto */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor */
+    border: none; /* Remove bordas */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s; /* Transição de cor */
+}
+
+.cadastre-se-btn:hover {
+    background-color: #444; /* Cor ao passar o mouse */
 }
