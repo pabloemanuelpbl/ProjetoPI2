@@ -7,54 +7,6 @@ body {
     padding: 15px;
 }
 
-#title{
-    font-size: 30px;
-}
-
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-}
-    #title{
-        flex-direction: column;
-        line-height: 10px;
-
-    }
-    
-
-    li {
-        display: inline-block;
-        margin: 20px;
-
-    }
-    a{
-        color: white;
-        font-family: comic sans ms;
-    }
-
-    a:hover{
-        color: rgb(1, 70, 7);
-        transition: 0.3s all;
-    }
-
-    #contato1-btn{
-        border: 2px solid rgb(71, 138, 101);
-        padding: 10px;
-        border-radius: 15px;
-    }
-
-    #contato1-btn:hover{
-        background-color: rgb(71, 138, 101);
-        color: white;
-    }
-
-    h1 {
-        font-weight: 10px;
-    }
-
     
     main {
         display: flex;

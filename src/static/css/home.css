@@ -1,10 +1,13 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: rgb(140, 184, 154);
-    color: white;
     font-family: Arial, Helvetica, sans-serif;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 15px;
 }
 
 /*  apresentacao */
@@ -13,25 +16,41 @@ body {
     width: 100%;
     background-color: white;
     color: black;
+    padding: 20px;
 }
 
 .card-image {
-    width: 300px;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-image > img {
-    width: 100%;
-    height: 100%;
+    width: 300px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    padding: 54px;
 }
 
 .card .card-title {
-    font-size: 2rem;
+    font-size: 2.04545em;
     color: #4D4D4D;
-    
 }
 
-/* cadastro */
+.card .card-title > h1 {
+    margin: 0;
+}
+
+/* ------------  cadastro ------------ */
+
+#cadastro{
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+}
 
 .cadastre-se-btn {
     background-color: #000; /* Preto */
@@ -48,4 +67,12 @@ body {
 
 .cadastre-se-btn:hover {
     background-color: #444; /* Cor ao passar o mouse */
+}
+
+@media screen and (max-width: 500px) {
+    #apresentation {
+        flex-direction: column;
+        justify-content: center;
+    }
+
 }

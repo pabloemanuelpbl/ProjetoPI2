@@ -9,5 +9,6 @@ SERVER_PORT = os.getenv("SERVER_PORT")
 if __name__ == "__main__":
     app.run( 
         debug=True,
-        port=SERVER_PORT
+        port=SERVER_PORT,
+        host='0.0.0.0'
     )
