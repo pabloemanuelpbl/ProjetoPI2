@@ -19,4 +19,12 @@ def contact():
 
 @app.route("/dashboard")
 def dashboard():
-    return render_template("dashboard.html")
+    return render_template("user/dashboard.html")
+
+@app.get("/login")
+def login():
+    return render_template("user/login.html")
+
+@app.post("/login")
+def login_post():
+    return "<script>document.location.href = '/dashboard' </script>"

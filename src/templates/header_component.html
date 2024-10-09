@@ -50,6 +50,19 @@ header a:hover {
     transition: 0.3s all;
 }
 
+header .login {
+    padding: 8px 12px;
+    border-radius: 10%;
+    font-weight: bold;
+    background-color: darkslategrey;
+}
+
+header .login:hover{
+    background-color: rgb(26, 42, 42);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 1px 1px 1px rgb(72, 72, 72) ;
+}
+
 </style>
 <header>
     <div id="title">
@@ -61,7 +74,8 @@ header a:hover {
       <a href="/">Início</a>
       <a href="/services">Serviços</a>
       <a href="/about">Sobre</a>
-      <a href="/contact" id="contato1-btn">Contato</a>
+      <a href="/contact">Contato</a>
+      <a href="/login" class="login">Login</a>
     </ul>
 
 </header>
