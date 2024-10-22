@@ -22,12 +22,15 @@ def contact():
 def dashboard():
     return render_template("user/dashboard.html")
 
-
 @app.route("/dashboard/clientes")
-def clientes():
+def listar_clientes():
     return render_template("user/clientes.html")
 
-@app.post("/dashboard/clientes")
+@app.route("/dashboard/cadastrarclientes")
+def cadastrarclientes():
+    return render_template("user/cadastrarclientes.html")
+
+@app.post("/dashboard/cadastrarclientes")
 def clientes_post():
     return "<script>document.location.href = '/dashboard' </script>"
 

@@ -3,49 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Usuário</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lista de Usuários Cadastrados</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/user/clientes.css')}}" />
-    <script>
-        // Validação simples no frontend
-        function validarFormulario() {
-            var senha = document.getElementById('senha').value;
-            var confirmarSenha = document.getElementById('confirmar_senha').value;
-            
-            if (senha !== confirmarSenha) {
-                alert("As senhas não coincidem!");
-                return false;
-            }
-            return true;
-        }
-    </script>
 </head>
 <body>
+    <header>
+        <h1>Usuários Cadastrados</h1>
+    </header>
+
     <main>
-        <header>
-            <h1>Cadastro de Usuário</h1>
-        </header>
-        <form action="/dashboard/clientes" method="POST" onsubmit="return validarFormulario()">
-            <label for="nome">Nome Completo:</label>
-            <input type="text" id="nome" name="nome" required>
-
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha" required>
-
-            <label for="confirmar_senha">Confirmar Senha:</label>
-            <input type="password" id="confirmar_senha" name="confirmar_senha" required>
-
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
-
-            <button type="submit">Cadastrar</button>
-        </form>
+        <section class="user-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Exemplo de usuários -->
+                    <tr>
+                        <td>1</td>
+                        <td>João Silva</td>
+                        <td>joao.silva@example.com</td>
+                        <td>
+                            <button class="edit">Editar</button>
+                            <button class="delete">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Maria Souza</td>
+                        <td>maria.souza@example.com</td>
+                        <td>
+                            <button class="edit">Editar</button>
+                            <button class="delete">Excluir</button>
+                        </td>
+                    </tr>
+                    <!-- Mais usuários podem ser listados aqui -->
+                </tbody>
+            </table>
+        </section>
+        <div>
+            <button onclick="location.href = '/dashboard'">RETORNAR</button>
+            <button onclick="location.href = '/dashboard/cadastrarclientes'">
+                CADASTRAR
+            </button>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2024 Plataforma de Reciclagem</p>
+        <p>&copy; 2024 Lista de Usuários. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
