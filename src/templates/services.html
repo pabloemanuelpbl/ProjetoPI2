@@ -1,23 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="x-UA-compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/static/css/style3.css" rel="stylesheet">
-  <title>ColeSel</title>
+  <title>Serviços Profissionais</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-
-<body>
+<body class="bg-gray-100">
+  <!-- Navbar -->
   {% include "header_component.html" %}
 
-  <main>
-    <aside>
-      <a>Realizar o atendimento aos chamados, para realizar a prestação de serviço de coleta seletiva.</a>
-    </aside>
+  <!-- Hero Section -->
+  <section class="bg-blue-500 text-white text-center py-16">
+    <h2 class="text-4xl font-bold mb-4">Oferecemos os melhores serviços para o seu negócio!</h2>
+    <p class="text-xl mb-6">Soluções personalizadas e de alta qualidade para atender todas as suas necessidades.</p>
+    <a href="/contact" class="bg-white text-blue-600 font-bold py-3 px-6 rounded-full hover:bg-gray-200">Solicite uma Proposta</a>
+  </section>
 
-  </main>
+  <!-- Services Section -->
+  <section id="services" class="container mx-auto py-16 px-4 text-center">
+    <h2 class="text-3xl font-bold text-gray-800 mb-6">Nossos Serviços</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Service 1 -->
+      <div class="p-6 bg-white rounded-lg shadow-lg">
+        <h3 class="text-2xl font-bold text-blue-600 mb-4">Consultoria Empresarial</h3>
+        <p class="text-gray-600">Ajude sua empresa a crescer com nossa consultoria especializada em gestão e planejamento estratégico.</p>
+      </div>
+      <!-- Service 2 -->
+      <div class="p-6 bg-white rounded-lg shadow-lg">
+        <h3 class="text-2xl font-bold text-blue-600 mb-4">Desenvolvimento Web</h3>
+        <p class="text-gray-600">Criação de sites e aplicativos sob medida para garantir a presença digital de sua empresa.</p>
+      </div>
+      <!-- Service 3 -->
+      <div class="p-6 bg-white rounded-lg shadow-lg">
+        <h3 class="text-2xl font-bold text-blue-600 mb-4">Marketing Digital</h3>
+        <p class="text-gray-600">Estratégias de marketing digital que aumentam a visibilidade da sua marca e geram resultados concretos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-gray-200 py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Sobre Nós</h2>
+      <p class="text-lg text-gray-600">Com anos de experiência no mercado, nossa equipe é composta por especialistas prontos para entender as necessidades da sua empresa e oferecer soluções inovadoras que realmente fazem a diferença.</p>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="container mx-auto py-16 px-4 text-center">
+    <h2 class="text-3xl font-bold text-gray-800 mb-6">Depoimentos</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Testimonial 1 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <p class="text-gray-600">"A equipe foi incrível! Eles transformaram completamente nossa presença online e nos ajudaram a atingir um público muito maior. Recomendo fortemente!"</p>
+        <p class="mt-4 font-bold text-blue-600">- João Silva, CEO da Empresa X</p>
+      </div>
+      <!-- Testimonial 2 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <p class="text-gray-600">"Graças à consultoria empresarial, nossa empresa triplicou o faturamento em menos de um ano. Estamos muito satisfeitos com os resultados."</p>
+        <p class="mt-4 font-bold text-blue-600">- Maria Souza, Diretora da Empresa Y</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white text-center py-4">
+    <p>&copy; 2024 Nossos Serviços. Todos os direitos reservados.</p>
+  </footer>
 </body>
-
 </html>
