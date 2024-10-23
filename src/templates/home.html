@@ -1,42 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="x-UA-compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/static/css/home.css" rel="stylesheet">
-  <title>ColeSel</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plataforma de Reciclagem</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  
-    {% include "header_component.html" %}
-    <section id="apresentation">
+<body class="bg-gray-100">
+  <!-- Navbar -->
+  {% include "header_component.html" %}
 
-        <div class="card-image">
-          <img src="/static/images/recicle.png" alt="imagen relacionada a reciclagem"> </img>
+  <!-- Hero Section -->
+  <section class="bg-green-500 text-white text-center py-16">
+    <h2 class="text-4xl font-bold mb-4">Ajude a salvar o planeta, comece a reciclar hoje!</h2>
+    <p class="text-xl mb-6">Nossa plataforma facilita o gerenciamento de reciclagem domiciliar.</p>
+    <a href="#contact" class="bg-white text-green-600 font-bold py-3 px-6 rounded-full hover:bg-gray-200">Começar Agora</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container mx-auto py-16 px-4 text-center">
+    <h2 class="text-3xl font-bold text-gray-800 mb-6">Sobre Nós</h2>
+    <p class="text-lg text-gray-600">Somos uma plataforma que ajuda você a gerenciar melhor o lixo reciclável da sua casa. Ao usar nosso serviço, você colabora com o meio ambiente, reduz o desperdício e contribui para um futuro mais sustentável.</p>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how" class="bg-gray-200 py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Como Funciona</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-4">
+          <img src="img/separar-lixo.png" alt="Separar Lixo" class="mx-auto mb-4 w-24 h-24">
+          <h3 class="text-xl font-bold mb-2">1. Separe o Lixo</h3>
+          <p class="text-gray-600">Divida seus resíduos em recicláveis e não recicláveis de forma prática.</p>
         </div>
-      
-        <div class="card">
-          <div>
-            <div class="card-title">
-              <h1>Quem Somos</h1>
-            </div>
-        
-            <div class="card-description">
-              <strong>Cole Sel</strong> é um software gratuito focado em reciclagem domiciliar, aprenda com a gente a contribuir para um futuro mais sustentável.
-            </div>
-          </div>
+        <div class="p-4">
+          <img src="img/coleta.png" alt="Coleta" class="mx-auto mb-4 w-24 h-24">
+          <h3 class="text-xl font-bold mb-2">2. Solicite Coleta</h3>
+          <p class="text-gray-600">Use nossa plataforma para agendar a coleta dos recicláveis.</p>
         </div>
-      
-    </section>
-    
+        <div class="p-4">
+          <img src="img/reciclar.png" alt="Reciclar" class="mx-auto mb-4 w-24 h-24">
+          <h3 class="text-xl font-bold mb-2">3. Reciclar e Acompanhar</h3>
+          <p class="text-gray-600">Veja como os materiais são transformados e monitorize seu impacto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="cadastro">
-        <h2>Cadastre-se e comece</h2>
-        <a href="#cadastro" class="cadastre-se-btn">Cadastre-se</a>
-    </section>
+  <!-- Services Section -->
+  <section id="services" class="container mx-auto py-16 px-4 text-center">
+    <h2 class="text-3xl font-bold text-gray-800 mb-6">Nossos Serviços</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="p-4 border rounded-lg shadow-lg">
+        <h3 class="text-xl font-bold text-green-600 mb-4">Coleta Domiciliar</h3>
+        <p class="text-gray-600">Agende a coleta de recicláveis diretamente de sua casa.</p>
+      </div>
+      <div class="p-4 border rounded-lg shadow-lg">
+        <h3 class="text-xl font-bold text-green-600 mb-4">Acompanhamento</h3>
+        <p class="text-gray-600">Veja o destino dos materiais reciclados e seu impacto ambiental.</p>
+      </div>
+      <div class="p-4 border rounded-lg shadow-lg">
+        <h3 class="text-xl font-bold text-green-600 mb-4">Dicas de Reciclagem</h3>
+        <p class="text-gray-600">Receba dicas de como separar e armazenar o lixo reciclável.</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- Contact Section -->
+  <section id="contact" class="bg-green-500 text-white py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Entre em Contato</h2>
+      <p class="mb-6">Tem alguma dúvida? Entre em contato e responderemos em breve.</p>
+      <form action="#" method="POST" class="max-w-lg mx-auto">
+        <div class="mb-4">
+          <input type="text" placeholder="Seu Nome" class="w-full p-3 rounded-lg text-gray-800" required />
+        </div>
+        <div class="mb-4">
+          <input type="email" placeholder="Seu Email" class="w-full p-3 rounded-lg text-gray-800" required />
+        </div>
+        <div class="mb-4">
+          <textarea placeholder="Sua Mensagem" class="w-full p-3 rounded-lg text-gray-800" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="bg-white text-green-600 font-bold py-3 px-6 rounded-full hover:bg-gray-200">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-600 text-white text-center py-4">
+    <p>&copy; 2024 Recicle Melhor. Todos os direitos reservados.</p>
+  </footer>
 </body>
-
 </html>

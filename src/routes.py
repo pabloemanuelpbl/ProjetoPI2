@@ -17,10 +17,18 @@ def about():
 def contact():
     return render_template("contact.html")
 
-#dashboard
+#dashboard ---------------------------
 @app.route("/dashboard")
 def dashboard():
     return render_template("user/dashboard.html")
+
+@app.route("/dashboard/coletas")
+def coletas():
+    return render_template("user/coletas.html")
+
+@app.post("/dashboard/coletas")
+def coletas_post():
+    return  "<script>document.location.href = '/dashboard' </script>"
 
 @app.route("/dashboard/clientes")
 def listar_clientes():
