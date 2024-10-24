@@ -1,5 +1,4 @@
 body {
-    background-color: rgb(140, 184, 154);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     max-width: 1200px;
@@ -11,6 +10,11 @@ main {
     display: flex;
     flex-direction: row;
     margin-top: 50px;
+    box-shadow: 0px 0px 6px black;
+    width: 430px;
+    padding: 16px;
+    border-radius: 18px;
+    color: black;
 }
 
 
