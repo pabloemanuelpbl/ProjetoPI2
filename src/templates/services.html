@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Serviços Profissionais</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serviços de Reciclagem</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100">
@@ -11,62 +11,67 @@
   {% include "header_component.html" %}
 
   <!-- Hero Section -->
-  <section class="bg-blue-500 text-white text-center py-16">
-    <h2 class="text-4xl font-bold mb-4">Oferecemos os melhores serviços para o seu negócio!</h2>
-    <p class="text-xl mb-6">Soluções personalizadas e de alta qualidade para atender todas as suas necessidades.</p>
-    <a href="/contact" class="bg-white text-blue-600 font-bold py-3 px-6 rounded-full hover:bg-gray-200">Solicite uma Proposta</a>
+  <section id="home" class="bg-green-500 text-white text-center py-16">
+    <h2 class="text-4xl font-bold mb-4">Nossos Serviços Facilitam a Reciclagem</h2>
+    <p class="text-xl mb-6">Oferecemos uma variedade de soluções para facilitar o gerenciamento de resíduos recicláveis diretamente na sua casa.</p>
+    <a href="#services" class="bg-white text-green-600 font-bold py-3 px-6 rounded-full hover:bg-gray-200">Conheça Nossos Serviços</a>
   </section>
 
   <!-- Services Section -->
-  <section id="services" class="container mx-auto py-16 px-4 text-center">
-    <h2 class="text-3xl font-bold text-gray-800 mb-6">Nossos Serviços</h2>
+  <section id="services" class="container mx-auto py-16 px-4">
+    <h2 class="text-3xl font-bold text-gray-800 text-center mb-6">Nossos Principais Serviços</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Service 1 -->
-      <div class="p-6 bg-white rounded-lg shadow-lg">
-        <h3 class="text-2xl font-bold text-blue-600 mb-4">Consultoria Empresarial</h3>
-        <p class="text-gray-600">Ajude sua empresa a crescer com nossa consultoria especializada em gestão e planejamento estratégico.</p>
+      <div class="p-6 bg-white shadow-lg rounded-lg text-center">
+        <img src="img/coleta-domiciliar.png" alt="Coleta Domiciliar" class="mx-auto mb-4 w-24 h-24">
+        <h3 class="text-xl font-bold text-green-600 mb-4">Coleta Domiciliar</h3>
+        <p class="text-gray-600">Agende a coleta de materiais recicláveis de maneira prática e rápida diretamente na sua residência.</p>
       </div>
-      <!-- Service 2 -->
-      <div class="p-6 bg-white rounded-lg shadow-lg">
-        <h3 class="text-2xl font-bold text-blue-600 mb-4">Desenvolvimento Web</h3>
-        <p class="text-gray-600">Criação de sites e aplicativos sob medida para garantir a presença digital de sua empresa.</p>
+      <div class="p-6 bg-white shadow-lg rounded-lg text-center">
+        <img src="img/pontos-coleta.png" alt="Pontos de Coleta" class="mx-auto mb-4 w-24 h-24">
+        <h3 class="text-xl font-bold text-green-600 mb-4">Pontos de Coleta</h3>
+        <p class="text-gray-600">Encontre os pontos de coleta mais próximos da sua localização para descartar materiais recicláveis.</p>
       </div>
-      <!-- Service 3 -->
-      <div class="p-6 bg-white rounded-lg shadow-lg">
-        <h3 class="text-2xl font-bold text-blue-600 mb-4">Marketing Digital</h3>
-        <p class="text-gray-600">Estratégias de marketing digital que aumentam a visibilidade da sua marca e geram resultados concretos.</p>
+      <div class="p-6 bg-white shadow-lg rounded-lg text-center">
+        <img src="img/dicas-reciclagem.png" alt="Dicas de Reciclagem" class="mx-auto mb-4 w-24 h-24">
+        <h3 class="text-xl font-bold text-green-600 mb-4">Dicas de Reciclagem</h3>
+        <p class="text-gray-600">Receba orientações sobre como separar e armazenar corretamente o lixo reciclável na sua casa.</p>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="bg-gray-200 py-16">
+  <!-- Benefits Section -->
+  <section id="benefits" class="bg-gray-200 py-16">
     <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold text-gray-800 mb-6">Sobre Nós</h2>
-      <p class="text-lg text-gray-600">Com anos de experiência no mercado, nossa equipe é composta por especialistas prontos para entender as necessidades da sua empresa e oferecer soluções inovadoras que realmente fazem a diferença.</p>
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Benefícios de Utilizar Nossos Serviços</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-green-600 mb-2">Facilidade e Conveniência</h3>
+          <p class="text-gray-600">Com nossa coleta domiciliar, você pode agendar a retirada dos recicláveis sem sair de casa.</p>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-green-600 mb-2">Impacto Ambiental Positivo</h3>
+          <p class="text-gray-600">Cada material reciclado contribui para a preservação do meio ambiente e diminui o desperdício.</p>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-green-600 mb-2">Educação Sustentável</h3>
+          <p class="text-gray-600">Nossas dicas e tutoriais ajudam você a adotar práticas de reciclagem mais eficazes.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Testimonials Section -->
-  <section id="testimonials" class="container mx-auto py-16 px-4 text-center">
-    <h2 class="text-3xl font-bold text-gray-800 mb-6">Depoimentos</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <!-- Testimonial 1 -->
-      <div class="bg-white p-6 rounded-lg shadow-lg">
-        <p class="text-gray-600">"A equipe foi incrível! Eles transformaram completamente nossa presença online e nos ajudaram a atingir um público muito maior. Recomendo fortemente!"</p>
-        <p class="mt-4 font-bold text-blue-600">- João Silva, CEO da Empresa X</p>
-      </div>
-      <!-- Testimonial 2 -->
-      <div class="bg-white p-6 rounded-lg shadow-lg">
-        <p class="text-gray-600">"Graças à consultoria empresarial, nossa empresa triplicou o faturamento em menos de um ano. Estamos muito satisfeitos com os resultados."</p>
-        <p class="mt-4 font-bold text-blue-600">- Maria Souza, Diretora da Empresa Y</p>
-      </div>
+  <!-- Call to Action Section -->
+  <section class="bg-green-500 text-white py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Pronto para Começar a Reciclar?</h2>
+      <p class="mb-6">Aproveite todos os benefícios dos nossos serviços de reciclagem. Junte-se a nós e faça a diferença!</p>
+      <a href="#contact" class="bg-white text-green-600 font-bold py-3 px-6 rounded-full hover:bg-gray-200">Entre em Contato</a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-blue-600 text-white text-center py-4">
-    <p>&copy; 2024 Nossos Serviços. Todos os direitos reservados.</p>
+  <footer class="bg-green-600 text-white text-center py-4">
+    <p>&copy; 2024 Serviços de Reciclagem. Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
