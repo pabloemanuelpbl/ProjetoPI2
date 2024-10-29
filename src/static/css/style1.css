@@ -1,72 +1,65 @@
 body {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
 }
 
 main {
-    display: flex;
-    flex-direction: row;
-    margin-top: 50px;
-    box-shadow: 0px 0px 6px black;
-    width: 430px;
-    padding: 16px;
-    border-radius: 18px;
-    color: black;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  width: 80vw;
+  padding: 16px;
+  color: black;
 }
 
-
 h2 {
-    font-size: 56px;
-    line-height: 10px;
-    font-family: poppismedium;
-    color: rgb(70, 179, 85);
+  font-size: xx-large;
+  line-height: 10px;
+  font-family: poppismedium;
+  color: rgb(70, 179, 85);
 }
 
 p {
-    font-size: 25px;
-    line-height: 20px;
-    max-width: 500px;
-    font-family: poppislight;
+  font-size: large;
+  line-height: 20px;
+  max-width: 500px;
+  font-family: poppislight;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
+  display: flex;
+  flex-direction: column;
 }
 
 form [type="submit"] {
-    height: 50px;
-    width: 50%;
-    background-color: rgb(118, 157, 240);
-    color: white;
-    font-weight: bold;
-
+  height: 50px;
+  width: 50%;
+  background-color: rgb(118, 157, 240);
+  color: white;
+  font-weight: bold;
 }
 
 form [type="submit"]:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-
 input {
-    margin-top: 20px;
-    height: 20px;
-    padding: 15px;
-    border-radius: 20px;
-    border: nome;
-    font-size: 15px;
+  margin-top: 20px;
+  height: 20px;
+  padding: 15px;
+  border-radius: 20px;
+  border: nome;
+  font-size: 15px;
 }
 
 textarea {
-    margin-top: 20px;
-    height: 20px;
-    padding: 30px;
-    border-radius: 20px;
-    border: nome;
-    font-size: 15px;
-    
+  margin-top: 20px;
+  height: 20px;
+  padding: 30px;
+  border-radius: 20px;
+  border: nome;
+  font-size: 15px;
 }
