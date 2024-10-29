@@ -1,68 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Área de Coleta</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/user/coletas.css')}}" />
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/user/coletas.css')}}"
+    />
+  </head>
+  <body>
     <header>
-        <h1>Área de Coleta de Materiais Recicláveis</h1>
+      <h1>Área de Coleta de Materiais Recicláveis</h1>
     </header>
 
     <main>
-        <section class="collection-area">
-            <h2>Selecione os Materiais para Coleta</h2>
+      <section class="collection-area">
+        <h2>Selecione os Materiais para Coleta</h2>
 
-            <form action="#" method="POST">
-                <!-- Local -->
-                <div class="form-group">
-                    <label for="location">Local da Coleta</label>
-                    <input type="text" id="location" name="location" placeholder="Insira o endereço" required>
-                </div>
+        <form action="#" method="POST">
+          <!-- Local -->
+          <div class="form-group">
+            <label for="location">Local da Coleta</label>
+            <input
+              type="text"
+              id="location"
+              name="location"
+              placeholder="Insira o endereço"
+              required
+            />
+          </div>
 
-                <!-- Data -->
-                <div class="form-group">
-                    <label for="date">Data da Coleta</label>
-                    <input type="date" id="date" name="date" required>
-                </div>
+          <!-- Data -->
+          <div class="form-group">
+            <label for="date">Data da Coleta</label>
+            <input type="date" id="date" name="date" required />
+          </div>
 
-                <!-- Materiais -->
-                <div class="material-category">
-                    <label for="plastic">Plástico</label>
-                    <input type="checkbox" id="plastic" name="material[]" value="plastic">
-                </div>
+          <!-- Materiais -->
+          <div class="material-category">
+            <label for="plastic">Plástico</label>
+            <input
+              type="checkbox"
+              id="plastic"
+              name="material[]"
+              value="plastic"
+            />
+          </div>
 
-                <div class="material-category">
-                    <label for="glass">Vidro</label>
-                    <input type="checkbox" id="glass" name="material[]" value="glass">
-                </div>
+          <div class="material-category">
+            <label for="glass">Vidro</label>
+            <input type="checkbox" id="glass" name="material[]" value="glass" />
+          </div>
 
-                <div class="material-category">
-                    <label for="paper">Papel</label>
-                    <input type="checkbox" id="paper" name="material[]" value="paper">
-                </div>
+          <div class="material-category">
+            <label for="paper">Papel</label>
+            <input type="checkbox" id="paper" name="material[]" value="paper" />
+          </div>
 
-                <div class="material-category">
-                    <label for="metal">Metal</label>
-                    <input type="checkbox" id="metal" name="material[]" value="metal">
-                </div>
+          <div class="material-category">
+            <label for="metal">Metal</label>
+            <input type="checkbox" id="metal" name="material[]" value="metal" />
+          </div>
 
-                <div class="material-category">
-                    <label for="organic">Resíduos Orgânicos</label>
-                    <input type="checkbox" id="organic" name="material[]" value="organic">
-                </div>
+          <div class="material-category">
+            <label for="organic">Resíduos Orgânicos</label>
+            <input
+              type="checkbox"
+              id="organic"
+              name="material[]"
+              value="organic"
+            />
+          </div>
 
-                <button type="submit">Solicitar Coleta</button>
-            </form>
-            <button onclick="location.href = '/dashboard'">RETORNAR</button>
-        </section>
+          <button type="submit">Solicitar Coleta</button>
+        </form>
+        <button onclick="location.href = '/dashboard'">RETORNAR</button>
+      </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Área de Coleta. Todos os direitos reservados.</p>
+      <p>&copy; 2024 Plataforma de Reciclagem</p>
     </footer>
-</body>
+  </body>
 </html>

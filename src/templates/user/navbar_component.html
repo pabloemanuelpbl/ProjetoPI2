@@ -85,7 +85,7 @@
   />
 </head>
 <div class="main-nav">
-  <div class="mobile">
+  <div id="mobile" class="mobile" onclick="openMenu()">
     <svg
       width="80px"
       fill="none"
@@ -101,7 +101,7 @@
       ></path>
     </svg>
   </div>
-  <nav class="nav">
+  <nav id="nav" class="nav">
     <div class="navbar">
       <div class="logo">
         <h1>Cole Sel</h1>
@@ -148,5 +148,13 @@
   </nav>
   <script>
     //responsividade
+    const mobileMenu = document.getElementById("mobile");
+    const nav = document.getElementById("nav");
+
+    function openMenu() {
+      const navStyle = window.getComputedStyle(nav);
+      if (navStyle.display == "none") return (nav.style.display = "block");
+      return (nav.style.display = "none");
+    }
   </script>
 </div>
