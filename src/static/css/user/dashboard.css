@@ -25,6 +25,9 @@ header {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
   max-width: 1200px;
   margin: 20px auto;
 }
@@ -89,3 +92,4 @@ footer {
   text-align: center;
   margin-top: 20px;
 }
+

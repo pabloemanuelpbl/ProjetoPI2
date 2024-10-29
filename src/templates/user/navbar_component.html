@@ -1,116 +1,152 @@
 <style>
-    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-*{
-  margin: 0;
-  padding: 0;
-  outline: none;
-  border: none;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-body{
-  background: rgb(233, 233, 233);
-}
-.container{
-  display: flex;
-  width: 1200px;
-  margin: auto;
-}
-nav{
-  position: sticky;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 280px;
-  height: 90vh;
-  background: #fff;
-}
-.navbar{
-  width: 80%;
-  margin: 0 auto;
-}
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+  * {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background: rgb(233, 233, 233);
+  }
+  .container {
+    display: flex;
+    margin: auto;
+  }
+  .nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    height: 90vh;
+    background: #fff;
+    overflow: hidden;
+  }
+  .navbar {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .navbar .logo {
+    text-align: center;
+  }
+  ul {
+    margin: 0 auto;
+  }
+  li {
+    padding-bottom: 2rem;
+  }
+  li a {
+    font-size: 16px;
+    color: rgb(85, 83, 83);
+  }
 
-.logo{
-  margin: 2rem 0 1rem 0;
-  padding-bottom: 3rem;
-  display: flex;
-  align-items: center;
-}
-.logo img{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-.logo h1{
-  margin-left: 1rem;
-  text-transform: uppercase;
-}
+  nav i {
+    width: 50px;
+    font-size: 18px;
+    text-align: center;
+  }
 
-ul{
-  margin: 0 auto;
-}
-li{
-  padding-bottom: 2rem;
-}
-li a{
-  font-size: 16px;
-  color: rgb(85, 83, 83);
-}
+  .logout {
+    position: absolute;
+    bottom: 20px;
+  }
+  .mobile {
+    display: none;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    background: rgba(0, 0, 0, 0.702);
+    color: white;
+    width: 120px;
+    height: 120px;
+    justify-content: center;
+    border-radius: 16px;
+  }
 
-nav i{
-  width: 50px;
-  font-size: 18px;
-  text-align: center;
-}
-
-.logout{
-  position: absolute;
-  bottom: 20px;
-}
+  @media only screen and (max-width: 700px) {
+    .mobile {
+      display: flex;
+    }
+    .nav {
+      display: none;
+    }
+  }
 </style>
 <head>
   <!-- Font Awesome Cdn Link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
 </head>
-<nav>
-  <div class="navbar">
-    <div class="logo">
-      <img src="/pic/logo.jpg" alt="">
-      <h1>Cole Sel</h1>
-    </div>
-    <ul>
-      <li><a href="dashboard/coletas">
-        <i class="fas fa-chart-bar"></i>
-        <span class="nav-item">coletas</span>
-      </a>
-      </li>  
-      <li><a href="dashboard/clientes">
-        <i class="fas fa-user"></i>
-        <span class="nav-item">clients</span>
-      </a>
-      </li>
-      <li><a href="#">
-        <i class="fas fa-tasks"></i>
-        <span class="nav-item">Jobs Board</span>
-      </a>
-      </li>
-      <li><a href="#">
-        <i class="fas fa-cog"></i>
-        <span class="nav-item">Setting</span>
-      </a>
-      </li>
-      <li><a href="#">
-        <i class="fas fa-question-circle"></i>
-        <span class="nav-item">Help</span>
-      </a>
-      </li>
-      <li><a href="/" class="logout">
-        <i class="fas fa-sign-out-alt"></i>
-        <span class="nav-item">Logout</span>
-      </a>
-      </li>
-    </ul>
+<div class="main-nav">
+  <div class="mobile">
+    <svg
+      width="80px"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M4 6h16M4 12h16M4 18h16"
+      ></path>
+    </svg>
   </div>
-</nav>
+  <nav class="nav">
+    <div class="navbar">
+      <div class="logo">
+        <h1>Cole Sel</h1>
+      </div>
+      <ul>
+        <li>
+          <a href="dashboard/coletas">
+            <i class="fas fa-chart-bar"></i>
+            <span class="nav-item">coletas</span>
+          </a>
+        </li>
+        <li>
+          <a href="dashboard/clientes">
+            <i class="fas fa-user"></i>
+            <span class="nav-item">clients</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-tasks"></i>
+            <span class="nav-item">Jobs Board</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-cog"></i>
+            <span class="nav-item">Setting</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-question-circle"></i>
+            <span class="nav-item">Help</span>
+          </a>
+        </li>
+        <li>
+          <a href="/" class="logout">
+            <i class="fas fa-sign-out-alt"></i>
+            <span class="nav-item">Logout</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <script>
+    //responsividade
+  </script>
+</div>
