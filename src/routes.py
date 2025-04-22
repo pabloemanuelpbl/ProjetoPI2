@@ -1,5 +1,8 @@
 from application import app
 from flask import render_template
+import os
+
+API_GATEWAY_URL = os.getenv("API_GATEWAY_URL")
 
 @app.route("/")
 def home():
@@ -36,7 +39,7 @@ def listar_clientes():
 
 @app.route("/dashboard/cadastrarclientes")
 def cadastrarclientes():
-    return render_template("user/cadastrarclientes.html")
+    return render_template("user/cadastrarclientes.html", api_gateway=API_GATEWAY_URL)
 
 @app.post("/dashboard/cadastrarclientes")
 def clientes_post():

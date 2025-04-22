@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  background-color: #4caf50;
+  background-color: #111827;
   color: white;
   padding: 20px;
   text-align: center;
@@ -77,13 +77,13 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #111827;
 }
 
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #4caf50;
+  background-color: #111827;
   color: white;
   width: 100%;
 }

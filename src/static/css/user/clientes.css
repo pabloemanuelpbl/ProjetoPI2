@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #111827;
     color: white;
     padding: 20px;
     text-align: center;
@@ -77,7 +77,7 @@ button.delete:hover {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #111827;
     color: white;
     position: fixed;
     bottom: 0;

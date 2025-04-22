@@ -5,35 +5,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="x-UA-compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/static/css/style1.css" rel="stylesheet">
   <title>ColeSel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  
+
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
+
   {% include "header_component.html" %}
-  
-  <main>
-    <aside>
-      <h2><span>Fale conosco</span></h2>
 
-      <p>
-        Informe seu nome e e-mail agora mesmo!.
+  <main class="w-full max-w-md p-6 bg-white rounded-2xl shadow-lg">
+    <h2 class="text-2xl font-semibold text-green-700 mb-2">Fale conosco</h2>
+    <p class="text-gray-600 mb-6">Informe seu nome e e-mail agora mesmo!</p>
 
-      </p>
-      <form action="https://formsubmit.co/matheus.pro3@outlook.com"method="POST">
-        <input type="text" placeholder="Nome">
-        <input type="email" placeholder="E-Mail">
-        <input type="hidden" name="_captcha" value="false">
-        <textarea name="message" placeholder="Escreva aqui sua mensagem"></textarea>
-        <input type="submit" value="Enviar>">
-        
-      </form>
-    </aside>
+    <form action="https://formsubmit.co/matheus.pro3@outlook.com" method="POST" class="flex flex-col gap-4">
+      <input type="text" placeholder="Nome" name="name" required
+        class="px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500" />
 
-    <article>
-    
+      <input type="email" placeholder="E-Mail" name="email" required
+        class="px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500" />
 
-    </article>
+      <input type="hidden" name="_captcha" value="false" />
+
+      <textarea name="message" placeholder="Escreva aqui sua mensagem" required
+        class="px-4 py-3 rounded-lg border border-gray-300 h-32 resize-none focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+
+      <input type="submit" value="Enviar"
+        class="bg-green-700 text-white py-3 rounded-lg font-semibold hover:bg-green-800 transition-all duration-200 cursor-pointer" />
+    </form>
   </main>
 </body>
 
